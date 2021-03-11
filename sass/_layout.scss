@@ -9,9 +9,13 @@
 }
 
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-Grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content {
@@ -21,10 +25,14 @@
 .sidebar {
     background-color: var(--color-Grey-dark-1);
     flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content-view {
     background-color: #fff;
-    background-color: orangered;
+    background-color: yellowgreen;
     flex: 1;
+    height: 80rem;
 }
