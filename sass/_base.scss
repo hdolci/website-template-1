@@ -36,6 +36,11 @@
     --line: 1px solid var(--color-Grey-light-2);
 }
 
+$bp-largest: 75em; //(1200px break point)
+$bp-large: 68.75em; //(1100px break point)
+$bp-medium: 56.25em; //(900px break point)
+$bp-small: 37.5em; //(600px break point)
+$bp-smallest: 31.25em; //(500px break point)
 *,
 *::before,
 *::after {
@@ -45,6 +50,9 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
